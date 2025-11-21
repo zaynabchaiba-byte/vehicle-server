@@ -1,6 +1,8 @@
 name: CICD
 on:
   - push
+  - pull_request
+
 jobs:
   CI:
     runs-on: ubuntu-24.04
