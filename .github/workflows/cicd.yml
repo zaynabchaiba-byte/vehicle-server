@@ -1,6 +1,7 @@
 name: CICD
 on:
   - push
+  - pull_request
 jobs:
   CI:
     runs-on: ubuntu-24.04
@@ -11,3 +12,4 @@ jobs:
           node-version: 22.20.0
       - run: npm ci
       - run: npm run build
+      
